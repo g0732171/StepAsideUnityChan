@@ -9,6 +9,8 @@ public class ItemGenerator2 : MonoBehaviour
     private GameObject unitychan;
     //private GameObject maincam;
 
+    UnityChanController getspeed;
+
     float interval;
     
 
@@ -31,12 +33,9 @@ public class ItemGenerator2 : MonoBehaviour
     {
         //Unityちゃんのオブジェクトを取得
         this.unitychan = GameObject.Find("unitychan");
-
-      
-
-        //UnityChanに設定された速度により15m間隔に必要な時間を計算
-        UnityChanController getvelocityZ = new UnityChanController();
-        interval = 15 / getvelocityZ.velocityZ;
+        
+        getspeed = unitychan.GetComponent<UnityChanController>();
+        interval = 15 / getspeed.velocityZ;  //UnityChanに設定された速度により15m間隔に必要な時間を計算
 
     }
 
@@ -81,13 +80,10 @@ public class ItemGenerator2 : MonoBehaviour
                     //60%コイン配置:30%車配置:10%何もなし
                     if (1 <= item && item <= 6)
                     {
-     
                             //コインを生成
-                            GameObject coin = Instantiate(coinPrefab);
+                        GameObject coin = Instantiate(coinPrefab);
                         coin.transform.position = new Vector3(posRange * j, coin.transform.position.y, (unitychan.transform.position.z + 40f + offsetZ));
-
-
-  
+                      
                     }
                     else if (7 <= item && item <= 9)
                     {
