@@ -5010,7 +5010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 114972211}
-  - component: {fileID: 114972210}
+  - component: {fileID: 114972213}
   m_Layer: 0
   m_Name: ItemGenerator
   m_TagString: Untagged
@@ -5018,21 +5018,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114972210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114972209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf70f1cad33c446ba4613981e42d363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carPrefab: {fileID: 2624780683333275917, guid: eb28da510c1c8422f8ccbc633d59f47b, type: 3}
-  coinPrefab: {fileID: 1255368046215999076, guid: 139b60414178c41a48ceb547f43978c9, type: 3}
-  conePrefab: {fileID: 4714439234258398605, guid: fb715fb4ee22147178f6469d71570a18, type: 3}
 --- !u!4 &114972211
 Transform:
   m_ObjectHideFlags: 0
@@ -5047,6 +5032,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114972213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114972209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3c03621f9248e1b078ef0056ceebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spacez: 
+  carPrefab: {fileID: 2624780683333275917, guid: eb28da510c1c8422f8ccbc633d59f47b, type: 3}
+  coinPrefab: {fileID: 1255368046215999076, guid: 139b60414178c41a48ceb547f43978c9, type: 3}
+  conePrefab: {fileID: 4714439234258398605, guid: fb715fb4ee22147178f6469d71570a18, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
