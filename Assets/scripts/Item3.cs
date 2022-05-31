@@ -5,8 +5,7 @@ using UnityEngine;
 public class Item3 : MonoBehaviour
 {
     private GameObject unitychan;
-    //private UnityChanController getspeed;
-
+    
     public List<int> spacez = new List<int>() { };
 
     //carPrefabを入れる
@@ -27,7 +26,7 @@ public class Item3 : MonoBehaviour
     {
         //Unityちゃんのオブジェクトを取得
         this.unitychan = GameObject.Find("unitychan");
-        //getspeed = unitychan.GetComponent<UnityChanController>();
+        
        for (int i = startPos ; i < goalPos; i += 15)
         {
             spacez.Add(i);
@@ -42,15 +41,9 @@ public class Item3 : MonoBehaviour
 
 
         
-        //for(int i = startPos; i < goalPos; i += 15)
         for(int k=0;k<spacez.Count;k++)
         {
 
-            //どのアイテムを出すのかをランダムに設定
-            //if (spacez[k] >= unitychan.transform.position.z + 40 && spacez[k] <= unitychan.transform.position.z + 40.3f)
-            //if (spacez[k] == unitychan.transform.position.z + 40)
-            //if (spacez[k] == (getspeed.velocityZ * Time.deltaTime) + 40f)
-            //if (unitychan.transform.position.z + 40 >= i)
             if (unitychan.transform.position.z + 40 >= spacez[k] )
             {
                 
